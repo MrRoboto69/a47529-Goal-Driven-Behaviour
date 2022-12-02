@@ -19,10 +19,10 @@ public class SubGoal
 public class GAgent : MonoBehaviour
 {
     public List<GAction> actions = new List<GAction>();
-    public Dictionary<SubGoal, int> goals - new Dictionary<SubGoal, int>();
+    public Dictionary<SubGoal, int> goals = new Dictionary<SubGoal, int>();
 
     GPlanner planner;
-    Queu<GAction> actionQueue;
+    Queue<GAction> actionQueue;
     public GAction currentAction;
     SubGoal currentGoal;
 
