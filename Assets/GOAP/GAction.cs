@@ -48,7 +48,6 @@ public abstract class GAction : MonoBehaviour
 
         inventory = this.GetComponent<GAgent>().inventory;
         beliefs = this.GetComponent<GAgent>().beliefs;
-            
     }
 
     public bool IsAchievable()

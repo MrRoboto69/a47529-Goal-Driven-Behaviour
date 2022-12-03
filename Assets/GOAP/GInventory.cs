@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GInventory 
+public class GInventory
 {
     List<GameObject> items = new List<GameObject>();
 
