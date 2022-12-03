@@ -325,22 +325,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 156335535}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ebb90ba288a2c94ba96ad94c887346f, type: 3}
+  m_Script: {fileID: 11500000, guid: aaf1d658f686e49a0bab2e9bfe02151d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   actionName: Get Patient
   cost: 1
-  target: {fileID: 1000317771}
+  target: {fileID: 0}
   targetTag: 
   duration: 0
-  preConditions:
-  - key: Waiting
-    value: 1
-  - key: FreeCubicle
-    value: 1
-  afterEffects:
-  - key: treatPatient
-    value: 1
+  preConditions: []
+  afterEffects: []
   agent: {fileID: 0}
   running: 0
 --- !u!114 &156335538
@@ -545,6 +539,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469685279}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &528499924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3191194391350855714, guid: 0fce119190bf0449caee6a98f2307710,
+    type: 3}
+  m_PrefabInstance: {fileID: 4695191399129213722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &528499925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528499924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7fa636d0cdee4f42ac79e83a53d7643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionName: Get Treated
+  cost: 1
+  target: {fileID: 0}
+  targetTag: 
+  duration: 0
+  preConditions:
+  - key: atHospital
+    value: 0
+  afterEffects:
+  - key: isTreated
+    value: 0
+  agent: {fileID: 0}
+  running: 0
 --- !u!1 &658721723
 GameObject:
   m_ObjectHideFlags: 0

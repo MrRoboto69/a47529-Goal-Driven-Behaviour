@@ -8,11 +8,11 @@ public class GetPatient : GAction
     public override bool PrePerform()
     {
         target = GWorld.Instance.RemovePatient();
-        if(target == null)
+        if (target == null)
             return false;
 
         resource = GWorld.Instance.RemoveCubicle();
-        if(resource != null)
+        if (resource != null)
             inventory.AddItem(resource);
         else
         {
@@ -20,8 +20,8 @@ public class GetPatient : GAction
             target = null;
             return false;
         }
-        
-        GWorld.Instance.GetWorld()ModifyState("FreeCubicle", -1);
+
+        GWorld.Instance.GetWorld().ModifyState("FreeCubicle", -1);
         return true;
     }
 
