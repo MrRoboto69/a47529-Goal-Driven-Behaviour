@@ -4,7 +4,7 @@ using UnityEngine;
 
 public sealed class GWorld
 {
-    private static readonly GWorld instance = new Gworld();
+    private static readonly GWorld instance = new GWorld();
     private static WorldStates world;
 
     static GWorld()
